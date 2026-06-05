@@ -1,0 +1,37 @@
+{
+  "keywords": [
+    "AI Agent",
+    "OpenAI",
+    "Anthropic",
+    "Gemini",
+    "字节",
+    "国产大模型"
+  ],
+  "output_dir": "./_outputs/info-radar",
+  "top_n": 12,
+  "scoring": {
+    "freshness": 20,
+    "heat": 25,
+    "credibility": 20,
+    "story_value": 25,
+    "relevance": 10
+  },
+  "report": {
+    "include_hooks": true,
+    "include_risks": true,
+    "include_sources": true,
+    "style": "中文总编简报"
+  },
+  "performance": {
+    "default_mode": "quick",
+    "per_source_timeout_seconds": 12,
+    "quick_mode_sources": ["aihot"],
+    "github_enabled_by_default": false,
+    "deep_mode_requires_explicit_request": true
+  },
+  "push": {
+    "enabled": false,
+    "channel": "",
+    "notes": "第一版只生成推送文案草稿；外部推送需要用户确认。"
+  }
+}

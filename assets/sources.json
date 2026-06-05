@@ -1,0 +1,264 @@
+{
+  "definition": "全网指国内外主流公共信息源的广覆盖，包括官方源、主流媒体、热榜、搜索引擎、技术社区、GitHub、论文和模型平台，不承诺抓取互联网每一个页面。",
+  "source_tiers": [
+    {
+      "type": "official",
+      "label": "一手官方源",
+      "examples": [
+        "OpenAI Blog",
+        "Anthropic News",
+        "Google DeepMind Blog",
+        "Microsoft Blog",
+        "Meta AI Blog",
+        "NVIDIA Blog",
+        "company docs",
+        "press releases",
+        "SEC EDGAR"
+      ],
+      "use_for": [
+        "事实确认",
+        "产品发布",
+        "公司公告",
+        "监管文件"
+      ]
+    },
+    {
+      "type": "domestic_media",
+      "label": "国内主流和行业媒体",
+      "examples": [
+        "新华社",
+        "央视",
+        "财新",
+        "澎湃",
+        "36氪",
+        "IT之家",
+        "机器之心",
+        "量子位",
+        "晚点"
+      ],
+      "use_for": [
+        "国内语境",
+        "传播强度",
+        "产业解读"
+      ]
+    },
+    {
+      "type": "global_media",
+      "label": "海外主流和行业媒体",
+      "examples": [
+        "Reuters",
+        "AP",
+        "Bloomberg",
+        "The Wall Street Journal",
+        "Financial Times",
+        "The Verge",
+        "TechCrunch",
+        "Wired",
+        "MIT Technology Review",
+        "The Decoder"
+      ],
+      "use_for": [
+        "国际语境",
+        "海外影响",
+        "跨国公司动态"
+      ]
+    },
+    {
+      "type": "hotlist_social",
+      "label": "热榜和社交平台",
+      "examples": [
+        "微博",
+        "知乎",
+        "抖音",
+        "B站",
+        "小红书",
+        "X",
+        "Reddit",
+        "Hacker News",
+        "Product Hunt"
+      ],
+      "use_for": [
+        "注意力信号",
+        "争议发酵",
+        "早期传播"
+      ]
+    },
+    {
+      "type": "developer",
+      "label": "开发者和开源生态",
+      "examples": [
+        "GitHub Trending",
+        "GitHub Search",
+        "GitHub Releases",
+        "GitHub Issues",
+        "GitLab",
+        "npm",
+        "PyPI",
+        "Docker Hub"
+      ],
+      "use_for": [
+        "开源项目追踪",
+        "技术采用信号",
+        "开发者反馈",
+        "工具爆发"
+      ]
+    },
+    {
+      "type": "research_model",
+      "label": "论文和模型平台",
+      "examples": [
+        "arXiv",
+        "Papers with Code",
+        "Hugging Face",
+        "OpenReview"
+      ],
+      "use_for": [
+        "研究趋势",
+        "模型发布",
+        "数据集",
+        "评测"
+      ]
+    }
+  ],
+  "preferred_collectors": [
+    {
+      "name": "daily-hot-news",
+      "role": "54 平台热榜扫描",
+      "path_hint": "skills/daily-hot-news",
+      "use_for": [
+        "国内热榜",
+        "平台榜单",
+        "跨平台注意力"
+      ]
+    },
+    {
+      "name": "hotspot-radar",
+      "role": "跨平台热点聚合和趋势分析",
+      "path_hint": "skills/hotspot-radar",
+      "use_for": [
+        "上升趋势",
+        "跨平台热点",
+        "话题监控"
+      ]
+    },
+    {
+      "name": "aihot",
+      "role": "AI HOT 中文 AI 资讯",
+      "path_hint": "skills/aihot",
+      "use_for": [
+        "AI 资讯",
+        "模型发布",
+        "产品发布",
+        "论文",
+        "行业动态"
+      ]
+    },
+    {
+      "name": "multi-search-engine",
+      "role": "国内外多搜索引擎关键词搜索",
+      "path_hint": "skills/multi-search-engine",
+      "use_for": [
+        "关键词检索",
+        "源头追踪",
+        "海外媒体",
+        "官方源",
+        "GitHub",
+        "论文平台"
+      ]
+    },
+    {
+      "name": "hot",
+      "role": "通用热点查询",
+      "path_hint": "skills/hot",
+      "use_for": [
+        "轻量热点入口",
+        "备用热榜入口"
+      ]
+    },
+    {
+      "name": "ai-topic-monitor",
+      "role": "AI 选题关键词监控",
+      "path_hint": "skills/ai-topic-monitor",
+      "use_for": [
+        "AI 关键词监控",
+        "选题池",
+        "周期性追踪"
+      ]
+    },
+    {
+      "name": "content-hunter",
+      "role": "短视频平台热门内容采集",
+      "path_hint": "skills/content-hunter",
+      "use_for": [
+        "短视频素材",
+        "小红书",
+        "抖音",
+        "B站内容参考"
+      ]
+    },
+    {
+      "name": "douyin-hot",
+      "role": "抖音热榜",
+      "path_hint": "skills/douyin-hot",
+      "use_for": [
+        "抖音实时热度",
+        "短视频热点"
+      ]
+    },
+    {
+      "name": "douyin-search-keyword",
+      "role": "抖音关键词搜索",
+      "path_hint": "skills/douyin-search-keyword",
+      "use_for": [
+        "抖音垂类搜索",
+        "视频素材",
+        "账号和内容观察"
+      ]
+    },
+    {
+      "name": "bilibili-hot-monitor",
+      "role": "B站热点监控",
+      "path_hint": "skills/bilibili-hot-monitor",
+      "use_for": [
+        "B站热点",
+        "视频内容趋势"
+      ]
+    },
+    {
+      "name": "china-hotdata",
+      "role": "中国实时热点",
+      "path_hint": "system or external skill",
+      "use_for": [
+        "社会热点",
+        "主流平台实时热点"
+      ]
+    }
+  ],
+  "direct_fallbacks": [
+    {
+      "name": "AI HOT public API",
+      "base_url": "https://aihot.virxact.com/api/public",
+      "script": "scripts/info_radar.py fetch-aihot",
+      "notes": "No API key required. Use browser User-Agent."
+    },
+    {
+      "name": "GitHub public web/search",
+      "base_url": "https://github.com",
+      "script": "scripts/info_radar.py fetch-github",
+      "notes": "Use public repository pages, search, releases, stars, forks, issues, and README as signals. Do not access private or login-only content."
+    }
+  ],
+  "output_schema": {
+    "title": "string",
+    "summary": "string",
+    "source": "string",
+    "url": "string",
+    "platform": "string",
+    "sourceType": "official | domestic_media | global_media | hotlist_social | developer | research_model | search | other",
+    "rank": "number or null",
+    "hot": "string or number or null",
+    "publishedAt": "ISO datetime or null",
+    "category": "string or null",
+    "keywords": "array of strings"
+  }
+}
